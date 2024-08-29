@@ -14,3 +14,16 @@ simpleTF({
     ...
 })
 ```
+maybe approaching it as instances of a simpleTF class would help ... or confuse?
+
+```javascript
+
+simpleTFmod = await import("url_simpleTF_mod.mjs")
+
+stf_iris = new simpleTFmod.simpleTF({
+    data:[/*default iris?*/]
+    layers:[/*default [] logistic?*/],
+    lossFun: SSD,
+    ...
+})
+```
